@@ -1,5 +1,5 @@
 import { Button } from "../components/Button";
-interface GenreProps {
+interface SideBarProps {
   genres: Array<{
     id: number;
     name: "action" | "comedy" | "documentary" | "drama" | "horror" | "family";
@@ -13,7 +13,7 @@ export function SideBar({
   genres,
   selectedGenreId,
   handleClickButton,
-}: GenreProps) {
+}: SideBarProps) {
   return (
     <nav className="sidebar">
       <span>

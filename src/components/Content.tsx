@@ -10,16 +10,14 @@ interface MovieProps {
   }>;
   Runtime: string;
 }
-interface GenreProps {
+interface ContentProps {
   selectedGenre: {
-    id: number;
-    name: "action" | "comedy" | "documentary" | "drama" | "horror" | "family";
     title: string;
   };
   movies: Array<MovieProps>;
 }
 
-export function Content({ movies, selectedGenre }: GenreProps) {
+export function Content({ movies, selectedGenre }: ContentProps) {
   return (
     <>
       <header>
